@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sound demo</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<script type="text/javascript" src="javascripts/lib/jquery-1.7.js"></script>
+		<script type="text/javascript" src="javascripts/lib/underscore.js"></script>
+		<script type="text/javascript" src="javascripts/lib/backbone.js"></script>
+		<script type="text/javascript" src="javascripts/lib/hogan.js"></script>
+		<script type="text/javascript" src="javascripts/marmalade.js"></script>
+		<script type="text/javascript" src="javascripts/routes.js"></script>
+		<script type="text/javascript" src="javascripts/views.js"></script>
+		<script type="text/javascript" src="javascripts/models.js"></script>
+		<script type="text/javascript" src="javascripts/collections.js"></script>
+		<script type="text/javascript" src="javascripts/play.js"></script>
+	</head>
+	<body onload="Marmalade.init();">
+		<script type="x-mustache" id="index-tmpl">
+			<h1>Pick a track</h1>
+			<form action="">
+				<select class="track-picker">
+					<option label="0" value="0" />
+					<option label="1" value="1" />
+					<option label="2" value="2" />
+					<option label="3" value="3" />
+				</select>
+			</form>
+		</script>
+		<script type="x-mustache" id="play-tmpl">
+			<h1>Sound demo</h1>
+			{{#beats}}
+			<div class="beat">
+				{{#notes}}
+				<div class="note _{{index}}"></div>
+				{{/notes}}
+			</div>
+			{{/beats}}
+	</script>
+	</body>
+</html>

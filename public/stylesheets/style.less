@@ -1,0 +1,37 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.beat {
+	width: 20px;
+	float: left;
+}
+
+.beat .active-indicator {
+	width: 20px;
+	height: 20px;
+	background-color: #311;
+	&.active {
+		background-color: #911;
+	}
+}
+
+.note {
+	height: 20px;
+	width: 20px;
+	margin: 5px 0px;
+	background-color: #333;
+}
+
+.note.active {
+	background-color: #373 !important;
+}
+
+.note.enabled {
+	background-color: #733;
+}
